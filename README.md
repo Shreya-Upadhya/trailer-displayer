@@ -1,70 +1,32 @@
-# Getting Started with Create React App
+# **Movie Trailer Display**
+Welcome to the Movie Trailer Display project built with React.js! This app allows users to browse through a list of popular movies and view their trailers directly from the app. You can click on any movie to view detailed information, including the trailer and a brief overview.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project utilizes React.js for dynamic rendering of movie data, making the app interactive and user-friendly.
 
-## Available Scripts
+**Features**
 
-In the project directory, you can run:
+1. Movie List: Displays a list of movies with titles and images.
 
-### `npm start`
+2. Trailer Viewing: Click on any movie to view its trailer.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+3. Movie Information: Shows movie details like the title, overview, and release date.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+4. Search Functionality: Allows users to search for a specific movie in the app.
 
-### `npm test`
+5. Favorites: Users can add and remove movies from their favorites list.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Technologies Used**
 
-### `npm run build`
+* React.js: For building the dynamic user interface and handling interactions like viewing trailers.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* TMDb API: For fetching movie data such as titles, trailers, and descriptions.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* CSS: For styling the app and creating a responsive design.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**Screenshots**
+![Screenshot 2025-03-04 211309](https://github.com/user-attachments/assets/5342d7c8-c443-4566-bb37-4bc9d9f13465)
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![Screenshot 2025-03-04 211333](https://github.com/user-attachments/assets/9924bdd3-814a-4c74-877a-439d7b1984cd)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![Screenshot 2025-03-04 211356](https://github.com/user-attachments/assets/78e8a78f-5f00-4173-9906-aa70bd531c94)
