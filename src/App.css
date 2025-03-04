@@ -1,0 +1,159 @@
+body {
+	  background:#0b0b0b;
+	  color: #ffffff;
+    position: relative;
+    font-family: 'Arial', sans-serif;
+	  background-image: url('/public/theatre.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+
+  }
+
+  body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Adjust opacity as needed */
+    z-index: 1; /* Make sure it sits below text */
+}
+
+body > * {
+  position: relative; /* Ensure content is above the overlay */
+  z-index: 2;
+}
+  
+.row *{
+	  width: auto;
+  }
+
+.navbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(20, 20, 20, 0.9); 
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+ }
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin-right: 100px;
+ }
+
+.nav-item a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px; /* Increase font size */
+ }
+
+.nav-item a:hover {
+  color: #e6c57a;
+ }
+
+.logo {
+  height:80px; /* Adjust the height as needed */
+  width: auto;  /* Maintain aspect ratio */
+  margin-right:1px;
+ }
+
+.navItem img {
+  position: relative;
+  left: -5px; 
+ }
+
+.ott > .row {
+	overflow-x: scroll;
+	flex-wrap: nowrap;
+	padding: 0 10px;
+    scroll-behavior: smooth;
+	margin: 0; 
+  }
+
+.row > div > img {
+    width: 150px;
+    border-radius: 10px; 
+ }
+
+.row::-webkit-scrollbar {
+  width: 8px; 
+  }
+  
+.row::-webkit-scrollbar-thumb {
+	cursor: pointer;
+  background-color: #888; /* Softer grey */
+  border-radius: 4px;
+  }
+
+.row::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Darker on hover */
+}
+
+  
+.row::-webkit-scrollbar-thumb:active {
+	background-color: #35458a9a;
+  }
+
+.movie-list-heading {
+  font-size: 24px; /* Larger headings */
+  margin-bottom: 10px; 
+  text-align: left;
+  font-weight: bold;
+  }
+
+.image-container {
+	  position: relative;
+	  transition: transform 0.2s;
+	  margin-right: 10px; 
+    flex: 0 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    overflow: hidden; /* Ensure the overlay fits nicely */
+  }
+
+.image-container:hover {
+	cursor: pointer;
+	transform: scale(1.1);
+  }
+  
+.image-container:hover .overlay {
+	opacity: 1;
+  }
+  
+.overlay {
+	position: absolute;
+	background: rgba(0, 0, 0, 0.8);
+	width: 100%;
+	transition: 0.5s ease;
+	opacity: 0;
+	bottom: 0;
+	font-size: 20px;
+	padding: 20px;
+	text-align: center;
+  border-radius: 0 0 10px 10px;
+  }
+
+.trailer {
+    margin: 40px 0; /* Increase margin for better spacing */
+    text-align: center;
+}
+
+.overlay h3 {
+  margin: 0; /* Remove default margin */
+}
+
+.trailer iframe {
+    width: 100%;
+    height: 315px;
+    max-width: 560px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Add shadow */
+}
